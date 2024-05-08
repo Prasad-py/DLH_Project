@@ -25,7 +25,7 @@ The goal of this project is to replicate the DeepMicro study and test its hypoth
 - `results/`: Contains the results of the experiments, including trained models and visualizations.
 - `DLH_Team_43.ipynb`: A Jupyter notebook that reproduces the DeepMicro project.
 - `en_dict`: A pickled Python dictionary to store information of trained autoencoders.
-- `clf_dict`: A pickled Python dictionary to store information of trained classifier.
+- `clf_dict`: A pickled Python dictionary to store information of trained classifiers.
 - `requirements.txt`: Lists the required Python packages and their versions.
 - `README.md`: Provides an overview of the project and instructions for running the code.
 
@@ -48,7 +48,9 @@ pip install -r requirements.txt
   - BATCH_SIZE: Batch size of the data loaders.
 4. The cell under the 'Hyperparameters' section contains HYP_PARAMS, AES and CLFS, which can be configured to select specific hyperparameters, autoencoder or classifier models, respectively.
 5. Run all the cells in order to run the entire DeepMicro pipeline.
-
+6. A custom en_dict file, along with the corresponding autoencoder models saved in the results folder, can be used to begin execution from the get_best_aes() method.
+7. Alternatively, a custom min_en_loss dictionary can be passed to the train_clf() method, in order to use specific autoencoder models saved in the results folder.
+8. The best classifiers for a custom clf_dict file can also be computed by running the cells in the 'Results' section.
 ## Results and Discussion
 
 Our replication study found that classifiers trained on the original data consistently performed better than those trained on encoded representations, which is different from the findings of the original DeepMicro paper. However, we did find that classifiers trained faster on the learned representations, supporting the second hypothesis.
