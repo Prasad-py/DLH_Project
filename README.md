@@ -13,18 +13,19 @@ This repository contains the code and resources for replicating the DeepMicro re
 
 ## Project Overview
 
-DeepMicro is a deep representation learning framework that exploits various autoencoders to learn robust low-dimensional representations from high-dimensional microbiome data and trains classification models based on the learned representations. The original study demonstrated that DeepMicro outperformed current best approaches in five out of six datasets.
+DeepMicro is a deep representation learning framework that employs various autoencoders to learn robust low-dimensional representations from high-dimensional microbiome data and trains classification models based on the learned representations. The original study demonstrated that DeepMicro outperformed the current best approaches in five out of six datasets.
 
-The goal of this project was to replicate the DeepMicro study and test its hypotheses:
+The goal of this project is to replicate the DeepMicro study and test its hypotheses:
 1. Training classifiers using a lower dimensional representation will result in more accurate predictions.
 2. Training classifiers using a lower dimensional representation will speed up the model training and hyperparameter tuning process.
 
 ## Repository Structure
 
 - `data/`: Contains the preprocessed microbiome datasets used in the project.
-- `models/`: Contains the implementation of the autoencoder and classifier models.
-- `results/`: Contains the results of the experiments, including model performance metrics and visualizations.
-- `notebook/`: Contains Jupyter notebooks used for data exploration, preprocessing, and analysis.
+- `results/`: Contains the results of the experiments, including trained models and visualizations.
+- `DLH_Team_43.ipynb`: A Jupyter notebook that reproduces the DeepMicro project.
+- `en_dict`: A pickled Python dictionary to store information of trained autoencoders.
+- `clf_dict`: A pickled Python dictionary to store information of trained classifier.
 - `requirements.txt`: Lists the required Python packages and their versions.
 - `README.md`: Provides an overview of the project and instructions for running the code.
 
