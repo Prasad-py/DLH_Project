@@ -1,4 +1,7 @@
-# DeepMicro Replication Project
+# CS598 Deeplearning For HealthCare Group Project
+
+# Reproduction of DeepMicro Study
+
 
 This repository contains the code and resources for replicating the DeepMicro research paper, "DeepMicro: Deep Representation Learning for Disease Prediction based on Microbiome Data" by Oh and Zhang (2020). The project was completed as part of the Deep Learning in Healthcare course by Joaquin Ugarte, Prasad Gole, and Ehit Agarwal.
 
