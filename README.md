@@ -51,6 +51,10 @@ Our replication study found that classifiers trained on the original data consis
 
 Possible explanations for the discrepancy in results include differences in the implementation (PyTorch vs. Keras/TensorFlow) and the need for better tuning of training hyperparameters. Future work will focus on implementing missing models, conducting a proper hyperparameter search, and adding new datasets from recent studies.
 
+## Project Video Demonstration
+
+https://drive.google.com/drive/u/2/folders/1sulQR6U7-jwWe9gUHLjr473GJ04IxXl8
+
 ## References
 
 Oh, Min, and Liqing Zhang. "DeepMicro: deep representation learning for disease prediction based on microbiome data." Scientific Reports 10.1 (2020): 1-9. https://doi.org/10.1038/s41598-020-63159-5.
