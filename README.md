@@ -1,4 +1,4 @@
-# CS598 Deeplearning For HealthCare Group Project
+# CS598 Deep Learning For Healthcare Group Project
 
 # Reproduction of DeepMicro Study
 
@@ -34,17 +34,20 @@ The goal of this project is to replicate the DeepMicro study and test its hypoth
 1. Clone the repository:
 ```
 git clone https://github.com/Prasad-py/DLH_Project
-cd deepmicro-replication
 ```
-
 2. Install the required packages:
 ```
 pip install -r requirements.txt
 ```
-
-3. Set the Parameters and Dataset number you wish to Train in the second cell of DL4H_Team_43.ipynb notebook:
-
-4. Run the Notebook - DL4H_Team_43.ipynb
+3. In the Jupyter notebook, under the 'Data' section, the cell labeled ‘Configure Parameters’ can be used for tuning certain parameters.
+  - DATASET is the index of the datasets dictionary, which can be used to select the dataset.
+  - ALL_HPS is set to False in order to train with a small subset of hyperparameters for the purpose of illustration. It can be set to TRUE in order to train with the entire set of hyperparameters.
+  - RANDOM_SEED: Random seed used for python, numpy and torch.
+  - TEST_SIZE: Size of the test set.
+  - NUM_FOLDS: Number of folds for cross-validation.
+  - BATCH_SIZE: Batch size of the data loaders.
+4. The cell under the 'Hyperparameters' section contains HYP_PARAMS, AES and CLFS, which can be configured to select specific hyperparameters, autoencoder or classifier models, respectively.
+5. Run all the cells in order to run the entire DeepMicro pipeline.
 
 ## Results and Discussion
 
