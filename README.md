@@ -1,6 +1,6 @@
 # CS598 Deep Learning For Healthcare Group Project
 
-# Reproduction of DeepMicro Study
+# Reproduction of DeepMicro
 
 
 This repository contains the code and resources for replicating the DeepMicro research paper, "DeepMicro: Deep Representation Learning for Disease Prediction based on Microbiome Data" by Oh and Zhang (2020). The project was completed as part of the Deep Learning in Healthcare course by Joaquin Ugarte, Prasad Gole, and Ehit Agarwal.
@@ -55,9 +55,9 @@ pip install -r requirements.txt
 
 Our replication study found that classifiers trained on the original data consistently performed better than those trained on encoded representations, which is different from the findings of the original DeepMicro paper. However, we did find that classifiers trained faster on the learned representations, supporting the second hypothesis.
 
-Possible explanations for the discrepancy in results include differences in the implementation (PyTorch vs. Keras/TensorFlow) and the need for better tuning of training hyperparameters. Future work will focus on implementing missing models, conducting a proper hyperparameter search, and adding new datasets from recent studies.
+Possible explanations for the discrepancy in results include differences in the implementation (PyTorch vs. Keras/TensorFlow) and the need for better tuning of training hyperparameters. The DeepMicro study compares its models to the MetAML study. It is likely that differences in the models developed by the two studies resulted in a discrepancy, which was interpreted as the encoded models being superior to the default models. Future work will focus on adding new datasets from recent studies, augmenting the current data sets with generative models and developing techniques to find the optimal training parameters for each combination of model type and dataset.
 
-## Project Video Demonstration
+## Project Video
 
 https://drive.google.com/drive/u/2/folders/1sulQR6U7-jwWe9gUHLjr473GJ04IxXl8
 
