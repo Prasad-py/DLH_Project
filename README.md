@@ -58,6 +58,7 @@ The evaluations of the complete set of autoencoder and classifier models can be 
 1. Placing the /results/all_model_evaluations/clf_dict file in the main folder. This file replaces a file of the same name.
 2. In the Jupyter notebook, choose the dataset by setting the DATASET parameter in the 'Data' section.
 3. Run all the cells in the 'Environment', 'Data' and 'Results' sections.
+4. DeepMicro_Comparison.pdf is a table adapted from the DeepMicro study, which compares their models with the models in our project.
 
 ## Results and Discussion
 
