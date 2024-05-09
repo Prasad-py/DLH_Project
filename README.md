@@ -24,12 +24,13 @@ The goal of this project is to replicate the DeepMicro study and test its hypoth
 - `data/`: Contains the preprocessed microbiome datasets used in the project.
 - `results/`: Contains the results of the experiments, including trained models and visualizations.
 - `DLH_Team_43.ipynb`: A Jupyter notebook that reproduces the DeepMicro project.
+- `DeepMicro_Comparison.pdf`: A table adapted from the DeepMicro study, which compares their models with the models in our project.
 - `en_dict`: A pickled Python dictionary to store information of trained autoencoders.
 - `clf_dict`: A pickled Python dictionary to store information of trained classifiers.
 - `requirements.txt`: Lists the required Python packages and their versions.
 - `README.md`: Provides an overview of the project and instructions for running the code.
 
-## Getting Started
+## Instructions
 
 1. Clone the repository:
 ```
@@ -51,6 +52,13 @@ pip install -r requirements.txt
 6. A custom en_dict file, along with the corresponding autoencoder models saved in the results folder, can be used to begin execution from the get_best_aes() method.
 7. Alternatively, a custom min_en_loss dictionary can be passed to the train_clf() method, in order to use specific autoencoder models saved in the results folder.
 8. The best classifiers for a custom clf_dict file can also be computed by running the cells in the 'Results' section.
+
+### Viewing Evaluations of All Models
+The evaluations of the complete set of autoencoder and classifier models can be viewed by
+1. Placing the /results/all_model_evaluations/clf_dict file in the main folder. This file replaces a file of the same name.
+2. In the Jupyter notebook, choose the dataset by setting the DATASET parameter in the 'Data' section.
+3. Run all the cells in the 'Environment', 'Data' and 'Results' sections.
+
 ## Results and Discussion
 
 Our replication study found that classifiers trained on the original data consistently performed better than those trained on encoded representations, which is different from the findings of the original DeepMicro paper. However, we did find that classifiers trained faster on the learned representations, supporting the second hypothesis.
